@@ -80,7 +80,7 @@ alignment * align(char * query_seq, seq_size q_len,
     align_rtn->q_aln_str = calloc( q_len + t_len, sizeof(char));
 
     c_min_k = 0;
-    c_max_k = 0;
+    c_max_k = 1;
 
     //printf("max_d: %lu, band_size: %lu\n", max_d, band_size);
     for (d = 0; d < max_d; d ++ ) {
